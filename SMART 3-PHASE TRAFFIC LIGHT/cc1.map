@@ -1,0 +1,42 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer0                                                                        0x0200       8
+tx_buffer0                                                                        0x0208       8
+_seed (stdlib.lib)                                                                0x0210       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index0                                                                      R3           1
+rx_rd_index0                                                                      R2           1
+rx_counter0                                                                       R5           1
+rx_buffer_overflow0                                                               GPIOR0.0  1bit
+tx_wr_index0                                                                      R4           1
+tx_rd_index0                                                                      R7           1
+tx_counter0                                                                       R6           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart0_rx_isr                                                                     0x00093     29
+getchar                                                                           0x000B0     19
+usart0_tx_isr                                                                     0x000C3     21
+timer1_compa_isr                                                                  0x000D8      6
+etapa1                                                                            0x000DE      6
+etapa2                                                                            0x000E4      7
+etapa3                                                                            0x000EB     14
+etapa4                                                                            0x000F9      6
+etapa5                                                                            0x000FF      2
+etapa6                                                                            0x00101      9
+etapa7                                                                            0x0010A     10
+etapa8                                                                            0x00114     11
+flash_PS1                                                                         0x0011F     28
+flash_PS2                                                                         0x0013B     28
+get_delay                                                                         0x00157     46
+main                                                                              0x00185    177
+Init_initController                                                               0x00236    104
